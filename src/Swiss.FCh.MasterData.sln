@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swiss.FCh.MasterData", "Swiss.FCh.MasterData\Swiss.FCh.MasterData.csproj", "{870BDBF4-6CD9-453A-B441-34610F3E67EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{5FE0644A-B121-4F88-8296-1DE49857E94E}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\nuget.config = ..\..\nuget.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swiss.FCh.MasterData.Tests", "Swiss.FCh.MasterData.Tests\Swiss.FCh.MasterData.Tests.csproj", "{89271BD2-6F20-401D-AB41-D55C8FCCD2AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{870BDBF4-6CD9-453A-B441-34610F3E67EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{870BDBF4-6CD9-453A-B441-34610F3E67EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{870BDBF4-6CD9-453A-B441-34610F3E67EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{870BDBF4-6CD9-453A-B441-34610F3E67EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89271BD2-6F20-401D-AB41-D55C8FCCD2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89271BD2-6F20-401D-AB41-D55C8FCCD2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89271BD2-6F20-401D-AB41-D55C8FCCD2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89271BD2-6F20-401D-AB41-D55C8FCCD2AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

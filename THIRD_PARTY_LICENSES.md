@@ -10,4 +10,4 @@
  | NUnit                  | 4.4.0   | MIT          | https://licenses.nuget.org/MIT          | 
  | NUnit.Analyzers        | 4.11.2  | MIT          | https://licenses.nuget.org/MIT          | 
  | NUnit.Analyzers        | 4.11.2  | MIT          | https://licenses.nuget.org/MIT          | 
- | Swiss.FCh.Sparql       | 6.2.3   | MIT          | https://licenses.nuget.org/MIT          | 
+ | Swiss.FCh.Sparql       | 6.2.4   | MIT          | https://licenses.nuget.org/MIT          | 

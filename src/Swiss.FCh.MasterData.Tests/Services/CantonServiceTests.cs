@@ -38,7 +38,7 @@ internal sealed class CantonServiceTests
     [Test]
     public async Task GetCantons_ShouldReturnData()
     {
-        var result = (await _service.GetCantons(CancellationToken.None)).ToList();
+        var result = (await _service.GetCantons(CancellationToken.None).ConfigureAwait(false)).ToList();
 
         Assert.That(result, Is.Not.Null);
         Assert.That(result, Has.Count.GreaterThanOrEqualTo(8));

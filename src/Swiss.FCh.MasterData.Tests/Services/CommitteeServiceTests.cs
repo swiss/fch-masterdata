@@ -38,7 +38,7 @@ internal sealed class CommitteeServiceTests
     [Test]
     public async Task GetCommittees_ShouldReturnData()
     {
-        var result = (await _service.GetCommittees(CancellationToken.None)).ToList();
+        var result = (await _service.GetCommittees(CancellationToken.None).ConfigureAwait(false)).ToList();
 
         Assert.That(result, Is.Not.Null);
         Assert.That(result, Has.Count.GreaterThan(100));

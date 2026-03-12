@@ -38,7 +38,7 @@ internal sealed class CountryServiceTests
     [Test]
     public async Task GetCountries_ShouldReturnData()
     {
-        var result = (await _service.GetCountries(CancellationToken.None)).ToList();
+        var result = (await _service.GetCountries(CancellationToken.None).ConfigureAwait(false)).ToList();
 
         Assert.That(result, Is.Not.Null);
         Assert.That(result, Has.Count.GreaterThanOrEqualTo(8));

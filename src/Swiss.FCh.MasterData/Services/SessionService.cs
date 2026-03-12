@@ -22,7 +22,7 @@ internal class SessionService : ISessionService
             DefinedTermsets.Sessions,
             ct,
             endpointUrl:SparqlEndpoints.LdAdmin,
-            dataModel: DataModels.SchemaOrg);
+            dataModel: DataModels.SchemaOrg).ConfigureAwait(false);
 
         return queryResult.Select(SessionMapper.MapToSession);
     }
@@ -31,7 +31,7 @@ internal class SessionService : ISessionService
     {
         ct.ThrowIfCancellationRequested();
 
-        var sessions = await GetSessions(ct);
+        var sessions = await GetSessions(ct).ConfigureAwait(false);
 
         //TODO: in the long run the date filters should be added to the Bk.Sparql library
         return sessions.Where(s => s.StartDate >= startDate && s.EndDate <= endDate);

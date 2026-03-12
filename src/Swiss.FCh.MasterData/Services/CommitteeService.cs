@@ -20,7 +20,7 @@ internal class CommitteeService : ICommitteeService
             DefinedTermsets.Committees,
             ct,
             endpointUrl:SparqlEndpoints.LdAdmin,
-            dataModel: DataModels.SchemaOrg);
+            dataModel: DataModels.SchemaOrg).ConfigureAwait(false);
 
         return queryResult.Select(CommitteeMapper.MatToCommittee);
     }

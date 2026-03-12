@@ -38,7 +38,7 @@ internal sealed class OfficeServiceTests
     [Test]
     public async Task GetOffices_ShouldReturnData()
     {
-        var result = (await _service.GetOffices(CancellationToken.None)).ToList();
+        var result = (await _service.GetOffices(CancellationToken.None).ConfigureAwait(false)).ToList();
 
         Assert.That(result, Is.Not.Null);
         Assert.That(result, Has.Count.GreaterThan(50));

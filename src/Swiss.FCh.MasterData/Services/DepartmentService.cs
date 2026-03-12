@@ -22,7 +22,7 @@ public class DepartmentService : IDepartmentService
             DefinedTermsets.Departments,
             ct,
             endpointUrl: SparqlEndpoints.LdAdmin,
-            dataModel: DataModels.SchemaOrg);
+            dataModel: DataModels.SchemaOrg).ConfigureAwait(false);
 
         return queryResult.Select(DepartmentMapper.MapToDepartment);
     }

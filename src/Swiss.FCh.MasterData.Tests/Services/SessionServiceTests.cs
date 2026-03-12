@@ -38,7 +38,7 @@ internal sealed class SessionServiceTests
     [Test]
     public async Task GetSessions_ShouldReturnData()
     {
-        var result = (await _service.GetSessions(CancellationToken.None)).ToList();
+        var result = (await _service.GetSessions(CancellationToken.None).ConfigureAwait(false)).ToList();
 
         Assert.That(result, Is.Not.Null);
         Assert.That(result, Has.Count.GreaterThan(100));

@@ -19,7 +19,7 @@ internal class AgentService : IAgentService
     {
         ct.ThrowIfCancellationRequested();
 
-        var queryResult = await _agentClient.GetAgents(uris, ct);
+        var queryResult = await _agentClient.GetAgents(uris, ct).ConfigureAwait(false);
 
         return queryResult.Select(AgentMapper.MapToAgent);
     }

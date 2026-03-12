@@ -5,7 +5,7 @@ This library allows to query master data from various RDF data stores of the fed
 ## Configuration
 Register the available master data services in your DI container as follows.
 
-```
+```csharp
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddMasterDataService(
@@ -25,7 +25,7 @@ The ```SwissFChMasterDataSettings``` allow you to configure the following option
 ## Querying Data
 Inject the required master data service in your class and use the offered methods to query data.
 
-```
+```csharp
 var countries = await countryService.GetCountries(stoppingToken);
 ```
 

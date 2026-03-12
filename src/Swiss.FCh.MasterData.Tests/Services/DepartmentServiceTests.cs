@@ -38,7 +38,7 @@ internal sealed class DepartmentServiceTests
     [Test]
     public async Task GetDepartments_ShouldReturnData()
     {
-        var result = (await _service.GetDepartments(CancellationToken.None)).ToList();
+        var result = (await _service.GetDepartments(CancellationToken.None).ConfigureAwait(false)).ToList();
 
         Assert.That(result, Is.Not.Null);
         Assert.That(result, Has.Count.GreaterThanOrEqualTo(8));

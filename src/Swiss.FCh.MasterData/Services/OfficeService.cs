@@ -31,7 +31,7 @@ internal class OfficeService : IOfficeService
             ct,
             endpointUrl: SparqlEndpoints.LdAdmin,
             dataModel: DataModels.SchemaOrg,
-            additionalAttributes: additionalAttributes);
+            additionalAttributes: additionalAttributes).ConfigureAwait(false);
 
         return queryResult.Select(OfficeMapper.MapToOffice);
     }

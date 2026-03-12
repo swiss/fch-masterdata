@@ -43,7 +43,7 @@ internal sealed class AgentServiceTests
 
         var uris = new List<string> { nationalCouncilUri, councilOfStatesUri };
 
-        var result = (await _service.GetAgents(uris, CancellationToken.None)).ToList();
+        var result = (await _service.GetAgents(uris, CancellationToken.None).ConfigureAwait(false)).ToList();
 
         Assert.That(result, Is.Not.Null);
         Assert.That(result, Has.Count.EqualTo(2));

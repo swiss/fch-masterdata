@@ -2,7 +2,7 @@ namespace Swiss.FCh.MasterData.Configuration;
 
 public class SwissFChMasterDataSettings
 {
-    public static SwissFChMasterDataSettings Default = new();
+    public static readonly SwissFChMasterDataSettings Default = new();
 
     public int RequestTimeoutMs { get; init; } = 30000;
     public string? ProxyAddress { get; init; }

@@ -22,6 +22,6 @@ internal class CommitteeService : ICommitteeService
             endpointUrl:SparqlEndpoints.LdAdmin,
             dataModel: DataModels.SchemaOrg).ConfigureAwait(false);
 
-        return queryResult.Select(CommitteeMapper.MatToCommittee);
+        return queryResult.Select(CommitteeMapper.MapToCommittee);
     }
 }

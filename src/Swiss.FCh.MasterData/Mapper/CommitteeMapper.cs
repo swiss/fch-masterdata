@@ -2,7 +2,7 @@ using Swiss.FCh.MasterData.Models;
 
 namespace Swiss.FCh.MasterData.Mapper;
 
-internal class CommitteeMapper
+internal static class CommitteeMapper
 {
     internal static Committee MatToCommittee(Sparql.Models.MasterData masterData)
     {

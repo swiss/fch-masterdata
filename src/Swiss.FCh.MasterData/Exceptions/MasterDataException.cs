@@ -1,6 +1,5 @@
 ﻿namespace Swiss.FCh.MasterData.Exceptions;
 
-[Serializable]
 public class MasterDataException : Exception
 {
     public MasterDataException(string message) : base(message)

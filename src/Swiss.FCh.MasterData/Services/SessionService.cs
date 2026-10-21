@@ -33,7 +33,6 @@ internal class SessionService : ISessionService
 
         var sessions = await GetSessions(ct).ConfigureAwait(false);
 
-        //TODO: in the long run the date filters should be added to the Bk.Sparql library
         return sessions.Where(s => s.StartDate >= startDate && s.EndDate <= endDate);
     }
 }

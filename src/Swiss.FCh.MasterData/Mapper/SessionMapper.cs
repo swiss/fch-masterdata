@@ -2,7 +2,7 @@ using Swiss.FCh.MasterData.Models;
 
 namespace Swiss.FCh.MasterData.Mapper;
 
-internal class SessionMapper
+internal static class SessionMapper
 {
     internal static Session MapToSession(Sparql.Models.MasterData masterData)
     {

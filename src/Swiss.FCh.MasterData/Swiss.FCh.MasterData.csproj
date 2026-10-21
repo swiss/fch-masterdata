@@ -32,7 +32,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Swiss.FCh.Sparql" Version="6.2.4" />
+        <PackageReference Include="Swiss.FCh.Sparql" Version="6.2.5" />
     </ItemGroup>
 
 </Project>

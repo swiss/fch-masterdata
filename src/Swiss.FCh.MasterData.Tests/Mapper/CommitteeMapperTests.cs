@@ -19,7 +19,7 @@ internal sealed class CommitteeMapperTests
             End = new DateOnly(2000, 2, 2)
         };
 
-        var committee = CommitteeMapper.MatToCommittee(masterData);
+        var committee = CommitteeMapper.MapToCommittee(masterData);
 
         Assert.That(committee, Is.Not.Null);
 

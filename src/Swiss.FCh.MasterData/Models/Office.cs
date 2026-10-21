@@ -19,6 +19,7 @@ public class Office
 
 internal static class OfficeConstants
 {
+#pragma warning disable S1075
     public const string DepartmentSchema = "http://schema.org/parentOrganization";
     public const string DepartmentUriIdentifier = "departmentUri";
 
@@ -29,4 +30,5 @@ internal static class OfficeConstants
     public const string GeneralSecretariatUri = "https://register.ld.admin.ch/termdat/441817";
     public const string CentralFederalAdministrationUri = "https://register.ld.admin.ch/termdat/57178";
     public const string DecentralisedFederalAdministrationUri = "https://register.ld.admin.ch/termdat/57179";
+#pragma warning restore S1075
 }
